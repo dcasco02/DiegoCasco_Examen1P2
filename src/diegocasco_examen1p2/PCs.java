@@ -10,5 +10,5 @@ package diegocasco_examen1p2;
  * @author dcasc
  */
 public class PCs {
-    
+    public
 }
