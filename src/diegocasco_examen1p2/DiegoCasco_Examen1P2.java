@@ -42,7 +42,6 @@ public class DiegoCasco_Examen1P2 {
                         /*System.out.println("Ingrese el tipo del almacenamiento (SSD o HDD): ");
                         String 
                         System.out.println("Ingrese si tiene targeta Grafica: (True o False)");
-                        
                         */System.out.println("Ingrese la dirreccion ip: ");
                         String ip=lea.next();
                         lea.nextLine();
@@ -60,8 +59,6 @@ public class DiegoCasco_Examen1P2 {
                         System.out.println("Ingrese la definicion de la pantalla: ");
                         String def=lea.next();
                         lea.nextLine();
-                        
-                        
                         System.out.println("Ingrese la direccion ip: ");
                         String dirip=lea.next();
                         lea.nextLine();
@@ -83,7 +80,19 @@ public class DiegoCasco_Examen1P2 {
                     }       
                 }
             }if(opcion==2){
-                
+                System.out.println("Ingrese la posicion de la pc: ");
+                int pos=lea.nextInt();
+                System.out.print(pc.get(pos).getHostname()+"# ");
+                String comand=lea.next();
+                if(comand!="exit"){
+                    
+                }
+                if(comand=="show"){
+                    System.out.println(pc.get(pos).getDireccionip());
+                    System.out.println(pc.get(pos).getMascarared());
+                }if(comand=="ping"){
+                    
+                }
             }
         }
     }
