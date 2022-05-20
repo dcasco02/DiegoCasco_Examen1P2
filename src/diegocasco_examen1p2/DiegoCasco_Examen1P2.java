@@ -81,17 +81,18 @@ public class DiegoCasco_Examen1P2 {
                 }
             }if(opcion==2){
                 System.out.println("Ingrese la posicion de la pc: ");
-                int pos=lea.nextInt();
-                System.out.print(pc.get(pos).getHostname()+"# ");
-                String comand=lea.next();
-                if(comand!="exit"){
-                    
-                }
-                if(comand=="show"){
-                    System.out.println(pc.get(pos).getDireccionip());
-                    System.out.println(pc.get(pos).getMascarared());
-                }if(comand=="ping"){
-                    
+                int pos = lea.nextInt();
+                    String comand="";
+                while(comand != "exit") {
+                    System.out.print(pc.get(pos).getHostname() + "# ");
+                    comand = lea.next();
+                    if (comand == "show") {
+                        System.out.println(pc.get(pos).getDireccionip());
+                        System.out.println(pc.get(pos).getMascarared());
+                    }
+                    if (comand == "ping") {
+                        
+                    }
                 }
             }
         }
