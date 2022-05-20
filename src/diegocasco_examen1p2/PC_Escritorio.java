@@ -12,13 +12,13 @@ package diegocasco_examen1p2;
 public class PC_Escritorio extends PCs {
     private int capram;
     private int capacidadalma;
-    private String tipoalma;
-    private String tarjetagraf;
+    private boolean tipoalma;
+    private boolean tarjetagraf;
 
     public PC_Escritorio() {
     }
 
-    public PC_Escritorio(int capram, int capacidadalma, String tipoalma, String tarjetagraf, String direccionip, String mascarared, String hostname) {
+    public PC_Escritorio(int capram, int capacidadalma, boolean tipoalma, boolean tarjetagraf, String direccionip, String mascarared, String hostname) {
         super(direccionip, mascarared, hostname);
         this.capram = capram;
         this.capacidadalma = capacidadalma;
@@ -42,19 +42,19 @@ public class PC_Escritorio extends PCs {
         this.capacidadalma = capacidadalma;
     }
 
-    public String getTipoalma() {
+    public boolean isTipoalma() {
         return tipoalma;
     }
 
-    public void setTipoalma(String tipoalma) {
+    public void setTipoalma(boolean tipoalma) {
         this.tipoalma = tipoalma;
     }
 
-    public String getTarjetagraf() {
+    public boolean isTarjetagraf() {
         return tarjetagraf;
     }
 
-    public void setTarjetagraf(String tarjetagraf) {
+    public void setTarjetagraf(boolean tarjetagraf) {
         this.tarjetagraf = tarjetagraf;
     }
 

@@ -12,16 +12,24 @@ package diegocasco_examen1p2;
 public class Laptop extends PCs {
     private String marca;
     private String definicionpantalla;
-    private String rgb;
+    private boolean rgb;
 
     public Laptop() {
         super();
     }
 
-    public Laptop(String marca, String definicionpantalla, String rgb, String direccionip, String mascarared, String hostname) {
+    public Laptop(String marca, String definicionpantalla, boolean rgb, String direccionip, String mascarared, String hostname) {
         super(direccionip, mascarared, hostname);
         this.marca = marca;
         this.definicionpantalla = definicionpantalla;
+        this.rgb = rgb;
+    }
+
+    public boolean isRgb() {
+        return rgb;
+    }
+
+    public void setRgb(boolean rgb) {
         this.rgb = rgb;
     }
 
@@ -41,13 +49,6 @@ public class Laptop extends PCs {
         this.definicionpantalla = definicionpantalla;
     }
 
-    public String getRgb() {
-        return rgb;
-    }
-
-    public void setRgb(String rgb) {
-        this.rgb = rgb;
-    }
 
     @Override
     public String toString() {
